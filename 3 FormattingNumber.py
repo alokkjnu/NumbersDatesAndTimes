@@ -21,3 +21,8 @@ print(format(x,'0,.1f'))
 print(format(x,'e'))
 print(format(x,'0.2E'))
 print('the value is {:0,.2f}'.format(x))
+
+swap_seprators = {ord('.'):',',ord(','):','}
+print(format(x, ',').translate(swap_seprators))
+
+print('%0.2f' % x)
