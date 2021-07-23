@@ -8,5 +8,3 @@ deff = z-y
 print(deff)
 
 print(z)
-nice_z = datetime.strftime(z, '%A %B %d, %y')
-print(nice_z)
