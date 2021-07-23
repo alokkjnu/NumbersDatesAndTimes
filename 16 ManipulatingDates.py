@@ -22,3 +22,5 @@ print(loc_d)
 utc_d = loc_d.astimezone(pytz.utc)
 print(utc_d)
 
+later_utc = utc_d + timedelta(minutes=30)
+print(later_utc.astimezone(central))
