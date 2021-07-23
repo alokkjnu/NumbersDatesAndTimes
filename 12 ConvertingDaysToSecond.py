@@ -9,3 +9,37 @@ print(c)
 print(c.seconds)
 print(c.seconds/3600)
 print(c.total_seconds()/3600)
+
+from datetime import datetime
+a = datetime(2021,9,23)
+print(a + timedelta(days=10))
+b = datetime(2012,12,21)
+d = b -a
+print(d.days)
+
+now = datetime.today()
+print(now)
+
+print(now + timedelta(minutes=10))
+
+a = datetime(2021,3,1)
+b = datetime(2022,2,28)
+print((a-b).days)
+
+c = datetime(2013,3,1)
+d = datetime(2013,2,28)
+print((c-d).days)
+
+from dateutil.relativedelta import relativedelta
+print(a + relativedelta(months=+1))
+print(a + relativedelta(months=+4))
+
+# Time between two dates
+b = datetime(2012,12,21)
+d = b-a
+print(d)
+
+d = relativedelta(b,a)
+print(d)
+print(d.months)
+print(d.days)
