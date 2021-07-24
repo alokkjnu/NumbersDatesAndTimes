@@ -21,3 +21,6 @@ with localcontext() as ctx:
     ctx.prec = 3
     print(a/b)
 
+with localcontext() as ctx:
+    ctx.prec = 50
+    print(a/b)
